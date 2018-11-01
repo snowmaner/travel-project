@@ -1,0 +1,23 @@
+html{
+    font-size: 13.3333vw;
+}
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.money-content{
+    padding: 0.3rem;
+    font: 0.28rem/0.48rem '微软雅黑';
+}
+.money-content .money-item{
+    padding-bottom: 0.5rem;
+}
+.money-item .money-title{
+    font: bold 0.36rem/0.8rem '微软雅黑';
+    text-align: center;
+}

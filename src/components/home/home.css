@@ -1,0 +1,210 @@
+html{
+    font-size: 13.3333vw;
+}
+body{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+input{
+    padding: 0;
+    outline: none;
+}
+
+.head{
+    width: 7.3rem;
+    height: 0.7rem;
+    padding: 0.1rem;
+    background: #00bcd4;
+    display: flex;
+    justify-content: space-between;
+    font: 0.36rem/0.7rem "微软雅黑";
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.head .sou{
+    padding-left: .5rem;
+}
+.head input{
+    height: 0.6rem;
+    border-radius: .1rem;
+    border:none;
+    width: 5.3rem;
+    padding-left: .2rem;
+    vertical-align: middle;
+    color: rgb(36, 36, 36);
+    font: 0.32rem/0.6rem "微软雅黑";
+}
+.head input::-webkit-input-placeholder {
+    color: #ccc;
+}
+.head a{
+    color: #ffffff;
+}
+
+.content{
+    padding-top: 0.9rem;
+}
+
+.series{
+    padding: 0.1rem;
+    font-size: 0.32rem;
+    line-height:0.8rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+.series .hotel{
+    height: 1.6rem;
+    background: rgb(255, 92, 51);
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.series .vehicle{
+    height: 1.6rem;
+    background: #00bcd4;
+    border-top:0.1rem solid #e7e7e7;
+    border-bottom:0.1rem solid #e7e7e7;
+}
+.series .travel{
+    height: 1.6rem;
+    background: rgb(87, 219, 25);
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.series li{
+    width: 2.5rem;
+}
+.series .cell{
+    height: 0.8rem;
+    border-bottom: 0.05rem solid #e7e7e7;
+    border-left: 0.05rem solid #e7e7e7;
+}
+
+.enjoy{
+    height: 2.5rem;
+    margin: 0 0.1rem;
+    background: #ffffff;
+    font-size: 0.26rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+.enjoy li{
+    width: 1.85rem;
+    padding-top: 0.8rem;
+}
+
+.discount{
+    padding: 0.1rem;
+    font-size: 0.26rem;
+    background: #ffffff;
+    margin: 0.1rem 0;
+
+}
+.discount .caption{
+    padding-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.caption .sale{
+    color:  #fc6d6d;
+    font:0.5rem/0.5rem '隶书';
+}
+.caption .more{
+    width: 1.5rem;
+    height: 0.5rem;
+    background: #fc6d6d;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    text-align: center;
+    font:0.28rem/0.5rem '微软雅黑';
+}
+.example .example-img{
+    width: 4rem;
+}
+.example .example-word{
+    background: #efefef;
+    padding: 0.1rem;
+    width: 3.8rem;
+    height: 0.6rem;
+    font: 0.26rem '微软雅黑';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.example .price{
+    color: #fd3816e7;
+    font-size: 0.32rem;
+    background: #efefef;
+}
+.price span{
+    font-size: 0.15rem;
+}
+
+.slogan{
+    width: 3.2rem;
+    padding-left: 0.1rem;
+    margin-left: 0.1rem;
+    height: 1.4rem;
+    background: #efefef;
+}
+.slogan li:nth-child(1){
+    font-weight: bold;
+    line-height: 0.5rem;
+    color: #fc6d6d
+}
+.back{
+    width: 1.55rem;
+    height: 2.1rem;
+    padding-top: 0.3rem;
+    background: #efefef;
+    margin: 0.1rem 0 0 0.1rem;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+.back span{
+    color: rgb(116, 176, 253);
+}
+.back:nth-child(2) span{
+    color: rgb(99, 250, 124);
+}
+
+
+.about{
+    padding-top: 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    font: 0.28rem/0.8rem '微软雅黑';
+    color: #000
+}
+.about a{
+    color: #000
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    font: 0.14rem/0.8rem '微软雅黑';
+    color: #4e4e4e
+}
+.foot span{
+    color: #949494;
+}

@@ -1,0 +1,78 @@
+
+html{
+    font-size: 13.3333vw;
+}
+body{
+    background: url(./img/1.jpg) no-repeat;
+    background-size:100%;
+}
+
+
+#title{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: rgb(44, 206, 247);
+}
+#title .left-arrow::before{
+    border:2px solid #fff;
+    border-width: 2px 0 0 2px;
+}
+
+.info{
+    padding-top: 0.6rem;
+    margin: 2rem auto;
+    width: 6rem;
+    height: 7.2rem;
+    background: rgb(0, 0, 0,.5);
+    border-radius: 0.1rem;
+}
+
+
+.head-img{
+    margin: 0 auto 0.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.head-img img{
+    width: 2.5rem;
+}
+.sign{
+    margin: 0.2rem auto;
+    width: 5rem;
+    height: 0.8rem;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 1.2rem;
+    text-align: center;
+    font:0.32rem/0.8rem '微软雅黑';
+}
+.sign input{
+    width: 4rem;
+    height: 0.8rem;
+    border: none;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    font:0.32rem/0.8rem '微软雅黑';
+    vertical-align: top
+}
+.signword{
+    margin: 0.2rem auto 0;
+    width: 5rem;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    font:0.32rem/0.8rem '微软雅黑';
+}
+.register{
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font:0.32rem/1rem '微软雅黑';
+}

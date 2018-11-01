@@ -1,0 +1,20 @@
+html{
+    font-size: 13.3333vw;
+}
+body{
+    margin: 0;
+}
+
+/* .moreContent{
+    height: 20rem;
+} */
+.moreContent .more-nav{
+    display: flex;
+    justify-content: space-around;
+    font: 0.32rem/0.8rem "微软雅黑";
+    background: #efefef;
+}
+.more-nav-active{
+    font:bold 0.36rem/0.8rem "微软雅黑";
+    color: #00bcd4;
+}
