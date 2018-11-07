@@ -1,0 +1,20 @@
+html{
+    font-size: 13.3333vw;
+}
+body{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    color: rgb(2, 119, 252);
+    text-decoration: none;
+}
+
+.letters{
+    position: relative;
+    text-align: center
+}

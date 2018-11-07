@@ -4,9 +4,8 @@
         <li class='letters' 
         v-for='(item,key) in cities' 
         :key='key'
-        @click='letterClick'
         >
-        {{key}}
+        <a :href="'#'+key">{{key}}</a>
         </li>
     </ul>
 </div>
@@ -20,12 +19,15 @@ export default {
             type:Object,
             default:()=>{({})}
         },
-        
-    },
-    methods: {
-        letterClick(e){
-            console.log(e.target.innerText)
+        word:{
+            type:String,
+            default:''
         }
     }
 }
 </script>
+<style>
+@import url('./letter.css');
+</style>
+
+

@@ -2,7 +2,7 @@
 <div>
     <header class="head">
         <div class="sou"><input type='text' placeholder="输入城市/景点/游玩主题"></div>
-        <router-link to='/search'>北京<span>∨</span></router-link>
+        <router-link to='/search'>{{this.$store.state.nowCity}}<span>∨</span></router-link>
     </header>
     <div class="content">
         <div class="body">

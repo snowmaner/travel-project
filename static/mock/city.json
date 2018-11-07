@@ -78,7 +78,7 @@
 					"img": "https://img1.qunarzz.com/p/tts7/1708/6a/a538c07f036c2b02.jpg_r_1280x840x90_d164d7e5.jpg"
 				}]
 			},
-			"children":{
+			"infoData":{
 				"moneyData":[{
 					"moneyTitle":"套餐包含",
 					"moneyItem":"往返交通+古北水镇门票"
@@ -157,24 +157,86 @@
 
 		}, {
 		"id": "0002",
-		"imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-		"title": "南山滑雪场",
-		"desc": "北京专业级滑雪圣地"
+		"imgUrl": "https://img1.qunarzz.com/p/tts4/1712/7b/3f61e2e69b173502.jpg_r_1280x840x90_2bd44108.jpg",
+		"title": "雪乡",
+		"desc": "专业级滑雪圣地",
+		"children":{
+			"bannerData":{
+				"showCommon":false,
+				"imgList":[{
+					"img": "https://img1.qunarzz.com/p/tts4/1712/7b/3f61e2e69b173502.jpg_r_1280x840x90_2bd44108.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts0/201211/26/c5f18b7472cd405b93835fbb.jpg_r_1280x840x90_e0b7e35c.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts9/201211/16/1a3b0a88b0f1ce9493835fbb.jpg_r_1280x840x90_da209482.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts9/201211/28/93eacbff34a02e4893835fbb.jpg_r_1280x840x90_f284b928.jpg"
+				}]
+			}
+		}
+
 		}, {
 		"id": "0003",
-		"imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-		"title": "天安门广场",
-		"desc": "我爱北京天安门，天安门上太阳升"
+		"imgUrl": "https://img1.qunarzz.com/p/tts5/1810/36/009f127cf8a5d202.jpg_r_1280x840x90_3fc43292.jpg",
+		"title": "三亚",
+		"desc": "阳光，沙滩",
+		"children":{
+			"bannerData":{
+				"showCommon":false,
+				"imgList":[{
+					"img": "https://img1.qunarzz.com/p/tts6/1809/89/54ba93662a269f02.jpg_r_1280x840x90_3a789e86.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts5/1810/36/009f127cf8a5d202.jpg_r_1280x840x90_3fc43292.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts2/1810/7d/ec374591ed1c5602.jpg_r_1280x840x90_b20c5357.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts6/1606/31/6c66293b21d5689a.jpg_r_1280x840x90_c6d80f65.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts3/1802/57/e997dd0d79d83202.jpg_r_1280x840x90_63aae5d1.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts7/1605/9f/15eec01e3f3c71f7.jpg_r_1280x840x90_5577ca53.jpg"
+				}]
+			}
+		}
+
 		}, {
 		"id": "0004",
-		"imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-		"title": "水立方",
-		"desc": "中国的荣耀，阳光下的晶莹水滴"
+		"imgUrl": "https://img1.qunarzz.com/p/tts9/1508/8e/6667f6db16c144.jpg_r_1280x840x90_98f21b64.jpg",
+		"title": "鼓浪屿",
+		"desc": "遇见文艺的浪漫",
+		"children":{
+			"bannerData":{
+				"showCommon":false,
+				"imgList":[{
+					"img": "https://img1.qunarzz.com/p/tts9/1508/8e/6667f6db16c144.jpg_r_1280x840x90_98f21b64.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts9/1504/fc/1524c810dfe02d.jpg_r_1280x840x90_d43b42cb.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts4/1506/ff/b82472df7423a5.jpg_r_1280x840x90_36a6865c.jpg"
+				}]
+			}
+		}
+
 		}, {
 		"id": "0005",
-		"imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
-		"title": "温都水城养生馆",
-		"desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
+		"imgUrl": "https://img1.qunarzz.com/p/tts8/1603/c0/09e10649717ec5f7.jpg_r_1280x840x90_8b1f6eed.jpg",
+		"title": "西安",
+		"desc": "秦岭兵马俑-独家探秘地宫之谜",
+		"children":{
+			"bannerData":{
+				"showCommon":false,
+				"imgList":[{
+					"img": "https://img1.qunarzz.com/p/tts1/1603/78/705559f0e8a3f9f7.jpg_r_1280x840x90_c963656d.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts7/1807/f8/5837944a7b70f602.jpg_r_1280x840x90_03bd2c84.jpg"
+				}, {
+					"img": "https://img1.qunarzz.com/p/tts7/1807/e7/e11904cb4bc2af02.jpg_r_1280x840x90_54ea2686.jpg"
+				},{
+					"img": "https://img1.qunarzz.com/p/tts7/1808/8b/7f99baee77da7f02.jpg_r_1280x840x90_87523f2f.jpg"
+				}]
+			}
+		}
+
 		}],
 	"weekendList": [{
 		"id": "0001",
