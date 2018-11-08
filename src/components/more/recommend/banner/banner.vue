@@ -52,7 +52,7 @@ export default {
       
       this.list = bannerInfo
       this.comList = bannerInfo.imgList
-      console.log(this.list)
+      // console.log(this.list)
     })
   }
 }

@@ -38,13 +38,11 @@ input{
     z-index: 1;
 }
 .head .sou{
-    padding-left: .5rem;
-}
-.head input{
+    margin: .08rem .2rem 0 .5rem;
+    flex: 1;
     height: 0.6rem;
     border-radius: .1rem;
     border:none;
-    width: 5.3rem;
     padding-left: .2rem;
     vertical-align: middle;
     color: rgb(36, 36, 36);

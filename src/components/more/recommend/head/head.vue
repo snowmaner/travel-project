@@ -16,9 +16,9 @@ export default {
     },
     methods: {
         headScroll () {
-            console.log(1)
+            // console.log(1)
             const top = document.documentElement.scrollTop
-            console.log(top)
+            // console.log(top)
             if(top > 60){
                 this.showHead=false
             }else{
@@ -26,8 +26,15 @@ export default {
             }
         }
     },
-    activated () {
+    mounted () {//activated keep-alive
+        
         window.addEventListener('scroll',this.headScroll)
+        // window.addEventListener('scroll',function(){
+        //     console.log(1)
+        // })
+    },
+    updated () {
+
     }
 }
 </script>

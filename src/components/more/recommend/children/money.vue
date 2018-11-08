@@ -1,12 +1,12 @@
 <template>
   <div class="money-content">
         <ul>
-            <li class="money-item">
+            <!-- <li class="money-item">
                 <div class="money-title">套餐包含</div>
                 <ul>
                     <li>往返交通+古北水镇门票</li>
                 </ul>
-            </li>
+            </li> -->
 
             <li class="money-item">
                 <div class="money-title">费用包含</div>
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="money-item">
+            <!-- <li class="money-item">
                 <div class="money-title">套餐不含</div>
                 <ul>
                     <li>
@@ -68,8 +68,8 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li class="money-item">
+            </li> -->
+            <!-- <li class="money-item">
                 <div class="money-title">儿童说明</div>
                 <ul>
                     <li>
@@ -78,13 +78,23 @@
                         价格说明：1.2米以下执行儿童价格。1.2米以上同成人价格。儿童价格只含往返车费。                
                     </li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
   </div>
 </template>
 <script>
+import {api} from '@/service/api'
 export default {
-    
+    data () {
+        return {
+            moneylist:[]
+        }
+    },
+    created () {
+        api().then(res=>{
+            console.log(res.data.data)
+        })
+    }
 }
 </script>
 <style>

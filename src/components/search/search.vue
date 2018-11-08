@@ -1,6 +1,9 @@
 <template>
 <div>
-    <x-header id="search" :left-options="{backText: ''}">城市选择</x-header>
+    <router-link tag='div' :to="{name:'Home'}" class="head-fixed">
+        <div class="head-fixed-back">〈</div>
+        <div class="head-fixed-title">城市选择</div>
+    </router-link>
     <div class='searchContent'>
          <div class='action'>
                 <input v-model="keyword" type='text' placeholder="请输入城市名或拼音" ref='o'/><!--<span @click=empty>×</span>-->
@@ -14,13 +17,9 @@
                         >
                             {{item.name}}
                         </li>
-                        <li v-show="!list.length">没有找到匹配数据</li>
+                        <li class="none" v-show="!list.length">没有找到匹配数据</li>
                     </ul>
                 </div>
-                <!-- <input 
-                type='submit' 
-                @click="sousuo"
-                /> -->
         </div>
         <Letter :cities='cities'></Letter>
         <div class="cities">
@@ -60,13 +59,11 @@
 </template>
 
 <script>
-import { XHeader } from 'vux'
 import Letter from '@/components/search/letter/letter'
 import {api} from '@/service/api'
     
 export default {
   components:{
-    XHeader,
     Letter
   },
   data(){
@@ -102,9 +99,9 @@ export default {
       }
   },
   methods:{
-    //   sousuo(){
+    //   empty(){
     //       if(this.$refs['o'].value){
-    //         this.nowCity = this.$refs['o'].value
+    //         this.$refs['o'].value = ''
     //       }
     //   },
       change(i){
