@@ -7,52 +7,55 @@
     <div class='searchContent'>
          <div class='action'>
                 <input v-model="keyword" type='text' placeholder="请输入城市名或拼音" ref='o'/><!--<span @click=empty>×</span>-->
-                <div v-show="keyword" class="down-list">
-                    <ul>
-                        <li 
-                        class="search-city"
-                        v-for='item of list' 
-                        :key='item.id'
-                        @click=change(item.name)
-                        >
-                            {{item.name}}
-                        </li>
-                        <li class="none" v-show="!list.length">没有找到匹配数据</li>
+                
+        </div>
+        <div v-show="keyword" class="down-list">
+            <ul>
+                <li 
+                class="search-city"
+                v-for='item of list' 
+                :key='item.id'
+                @click=change(item.name)
+                >
+                    {{item.name}}
+                </li>
+                <li class="none search-city" v-show="!list.length">没有找到匹配数据</li>
+            </ul>
+        </div>
+        <div class="allCity" v-show="!keyword">  
+            <Letter :cities='cities'></Letter>
+            <div class="cities">
+                <div>
+                    <div class='hot'>当前城市</div>
+                    <ul class='list'>
+                        <li>{{this.$store.state.nowCity}}</li>
                     </ul>
                 </div>
-        </div>
-        <Letter :cities='cities'></Letter>
-        <div class="cities">
-            <div>
-                <div class='hot'>当前城市</div>
-                <ul class='list'>
-                    <li>{{this.$store.state.nowCity}}</li>
-                </ul>
-            </div>
-            <div>
-                <div class='hot'>热门城市</div>
-                <ul class='list'>
-                    <li
-                        v-for='item in hotCities'
-                        :key='item.id'
-                        @click=change(item.name)
+                <div>
+                    <div class='hot'>热门城市</div>
+                    <ul class='list'>
+                        <li
+                            v-for='item in hotCities'
+                            :key='item.id'
+                            @click=change(item.name)
 
-                    >{{item.name}}</li>
-                </ul>
-            </div>
-            <div class="letter-city" v-for='(item,key) in cities' :key='key'>
-                <div class="id-href" :id='key'></div>
-                <div class='hot'>{{key}}</div>
-                <ul>
-                    <li
-                        v-for='innerItem in item'
-                        :key='innerItem.id'
-                        class='item'
-                        @click=change(innerItem.name)
-                    >{{innerItem.name}}</li>
-                </ul>
-            </div>
-        </div>    
+                        >{{item.name}}</li>
+                    </ul>
+                </div>
+                <div class="letter-city" v-for='(item,key) in cities' :key='key'>
+                    <div class="id-href" :id='key'></div>
+                    <div class='hot'>{{key}}</div>
+                    <ul>
+                        <li
+                            v-for='innerItem in item'
+                            :key='innerItem.id'
+                            class='item'
+                            @click=change(innerItem.name)
+                        >{{innerItem.name}}</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>      
     </div>
    
 </div>

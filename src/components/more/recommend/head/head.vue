@@ -1,8 +1,12 @@
 <template>
   <div>
     <router-link tag='div' :to="{name:'More'}" class="head-back" v-show="showHead">〈</router-link>
-    <div class="head-fixed" v-show="!showHead">
-        <div class="head-fixed-back">〈</div>
+    <div 
+        class="head-fixed" 
+        v-show="!showHead"
+        :style="opacityStyle"
+        >
+        <router-link tag='div' :to="{name:'More'}" class="head-fixed-back">〈</router-link>
         <div class="head-fixed-title">景点详情</div>
     </div>
   </div>
@@ -11,15 +15,20 @@
 export default {
     data () {
         return {
-            showHead:true
+            showHead:true,
+            opacityStyle: {
+                opacity: 0
+            }
         }
     },
     methods: {
         headScroll () {
-            // console.log(1)
             const top = document.documentElement.scrollTop
-            // console.log(top)
-            if(top > 60){
+
+            if(top > 80){
+                let opacityBian = top/180
+                opacityBian = opacityBian > 1? 1 : opacityBian
+                this.opacityStyle = { opacity: opacityBian }
                 this.showHead=false
             }else{
                 this.showHead=true
@@ -29,12 +38,9 @@ export default {
     mounted () {//activated keep-alive
         
         window.addEventListener('scroll',this.headScroll)
-        // window.addEventListener('scroll',function(){
-        //     console.log(1)
-        // })
     },
     updated () {
-
+        window.addEventListener('scroll',this.headScroll)
     }
 }
 </script>

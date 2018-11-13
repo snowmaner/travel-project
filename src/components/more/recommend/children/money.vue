@@ -92,7 +92,8 @@ export default {
     },
     created () {
         api().then(res=>{
-            console.log(res.data.data)
+            let moneyinfo = res.data.data.recommendList[0].children.infoData
+            console.log(moneyinfo)
         })
     }
 }

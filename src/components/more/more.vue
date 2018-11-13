@@ -28,7 +28,7 @@
           <ul>
             <router-link 
             tag='li'
-            :to="{name:'Recommend',query:{id:item.id}}"
+            :to="{name:'Recommend',params:{id:item.id}}"
             class='item' 
             v-for='item in recommendList' 
             :key='item.id'>

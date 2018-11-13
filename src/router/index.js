@@ -39,7 +39,7 @@ let router=new VueRouter({
             component:Search //搜索
         },
         {
-            path:'/recommendList',
+            path:'/recommendList/:id',
             name:'Recommend',
             component:Recommend, //热门推荐详情
             // component:()=>import('@/components/more/recommend/recommend')懒加载

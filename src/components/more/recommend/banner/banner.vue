@@ -47,7 +47,7 @@ export default {
   created () {
     api().then(res=>{
       let recommendList = res.data.data.recommendList
-      let bannerList = recommendList.filter(item => item.id == this.$route.query.id);
+      let bannerList = recommendList.filter(item => item.id == this.$route.params.id);
       let bannerInfo = bannerList[0].children.bannerData
       
       this.list = bannerInfo
