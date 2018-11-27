@@ -23,7 +23,9 @@
             </ul>
         </div>
         <div class="allCity" v-show="!keyword">  
+
             <Letter :cities='cities'></Letter>
+            
             <div class="cities">
                 <div>
                     <div class='hot'>当前城市</div>

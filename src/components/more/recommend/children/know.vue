@@ -7,6 +7,7 @@
         </li>
     </ul>
     <div @click='changea(100)'>{{abc}}</div>
+    <div>{{$store.getters.getA}}</div>
   </div>
 </template>
 <script>
@@ -29,9 +30,18 @@ export default {
         }
     },
     methods:{
+        // changea(x){
+        //     console.log(x)
+        //     this.$store.commit({//提交mutations
+        //         type:'changeA',
+        //         can:x
+        //     })
+        // }
         changea(x){
-            console.log(x)
-            this.$store.commit('changeA',x)
+            this.$store.dispatch({//触发actions
+                type:'changeA',
+                can:x
+            })
         }
     }
 }

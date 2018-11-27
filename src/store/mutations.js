@@ -7,7 +7,7 @@ export default {
         } catch (e) {}
     },
 
-    changeA(state,x){ 
-        state.a=x
+    changeA(state,num){ 
+        state.a=num.can
     }
 }

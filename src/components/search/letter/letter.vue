@@ -21,7 +21,7 @@ export default {
         },
         word:{
             type:String,
-            default:''
+            default:''//默认值
         }
     }
 }
