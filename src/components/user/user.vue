@@ -3,7 +3,7 @@
       <x-header id="title" :left-options="{backText: ''}">登录</x-header>
       <div class='info'>
           <div class='head-img'>
-            <img src='./img/2.jpg'/>
+            <!-- <img src='./img/2.jpg'/> -->
           </div>
           <div class='sign username'>
             <input type='text' placeholder='用户名'/>
