@@ -10,11 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
-      '/static/mock': {
-        target: 'http://localhost:8080'
-      }
-    },//设置中间件跨域
+    proxyTable: {},//设置中间件跨域
 
     // Various Dev Server settings
     host: 'localhost',//'172.20.10.3', // can be overwritten by process.env.HOST
