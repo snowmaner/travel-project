@@ -1,5 +1,6 @@
 <template>
   <div id="main">
+    <!-- <div>打包</div> -->
     <router-view></router-view>
   </div>
 </template>

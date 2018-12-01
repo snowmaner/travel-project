@@ -14,8 +14,8 @@ import vue from 'vue'
 import VueRouter from 'vue-router'
 vue.use(VueRouter)
 
-let router=new VueRouter({
-    mode:'history',
+const router = new VueRouter({
+    // mode:'history',
     linkActiveClass:'more-nav-active',//设置选中样式
     routes:[
         {
